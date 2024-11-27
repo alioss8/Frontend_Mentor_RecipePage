@@ -1,0 +1,113 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:hsl(30, 18%, 87%);
+}
+h2{
+    color:hsl(332, 51%, 32%); 
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+}
+/* Ekran genişliği 768px'den küçükse bu stiller uygulanır */
+@media (max-width: 768px) {
+   .card{
+    max-width:fit-content;
+    max-height: fit-content;
+    margin-left:50%;
+   }
+   
+}
+  
+  
+.container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > .card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 600px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    font-size: 16px; 
+    @media screen {
+        
+    }
+}
+.container>.card > .card_header > h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+.container>.card > .card_header > p {
+    font-family: "Outfit", sans-serif;
+}
+.container>.card > .card_header >img{
+    margin:0 20px 0 50px;
+    width:500px;
+    border-radius: 20px;
+    
+}
+.container>.card > .card_header >.card_time{
+    background-color: hsl(330, 100%, 98%)
+}
+.container>.card > .card_header >.card_time>.time{
+    color: hsl(332, 51%, 32%);
+    font-family: "Outfit", sans-serif;
+}  
+.container>.card > .card_header >.card_time>.list1>li{
+    padding-bottom: 15px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+}
+.container>.card>.ingredient{
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+}
+.container>.card>.list2>li{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;  
+}
+.container>.card>.list2>li::marker{
+    color:hsl(332, 51%, 32%);
+}
+.container>.card>hr{
+        border: none;     
+        border-top: 2px solid hsl(30, 54%, 90%);
+        margin: 20px 0;  
+        width: 100%;    
+        margin-left: auto;   
+        margin-right: auto; 
+}
+.container > .card > .instruction>li::marker{
+    color:hsl(332, 51%, 32%);
+}
+.container > .card > .instruction> li{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.container>.card>p{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px ;
+}
+.container>.card>.table>.tbody>tr,td{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid hsl(30, 54%, 90%);
+}
+
+
+
+
